@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Passenger Registration </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Passenger Registration </h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+
+              <div class="form-group">
+
+              <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+      </div>
+
+
+
+
+              <!-- Change "Password" to "Passport Number" -->
+              <div class="form-group">
+                <label for="passport">Passport Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="passport"
+                  name="passport"
+                />
+              </div>
+              <!-- End of change -->
+
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+              <!-- New input fields for nationality and age -->
+              <div class="form-group">
+                <label for="nationality">Nationality</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nationality"
+                  name="nationality"
+                />
+              </div>
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="age"
+                  name="age"
+                />
+              </div>
+              <!-- End of new input fields -->
+
+              <div class="form-group text-center">
+                <input type="submit" class="btn btn-primary" />
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <p>Already registered? <a href="login.html">Click here</a> to login.</p>
+  </body>
+</html>
